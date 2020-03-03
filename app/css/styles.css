@@ -8,35 +8,39 @@ html {
 
 .container {
   margin: 0 auto;
-  padding: 0 16px;
-  max-width: 960px; }
+  max-width: 960px;
+  padding: 0 16px; }
 
-.row::before,
-.row::after {
-  display: table;
-  content: ' ';
-  clear: both; }
+.section {
+  margin: 0 0 6rem 0; }
 
-.one,
-.one-third,
-.two-thirds,
-.one-fourth,
-.three-fourths,
-.half {
-  width: 100%; }
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
 
-@media only screen and (min-width: 800px) {
-  .one {
-    width: 100%; }
-  .half {
-    width: calc(100% / 2); }
-  .one-third {
-    width: calc(100% / 3); }
-  .one-fourth {
-    width: calc(100% / 4); }
-  .two-thirds {
-    width: calc(100% / 3 * 2); }
-  .three-fourths {
-    width: calc(100% / 4 * 3); }
+.column {
+  flex-basis: 100%;
+  background-color: lightgray;
+  padding: 8px;
+  margin: 8px 0 8px 0; }
+
+@media screen and (min-width: 800px) {
   .column {
-    float: left; } }
+    flex: 1; }
+  .column:first-child {
+    margin: 8px 8px 8px 0; }
+  .column:last-child {
+    margin: 8px 0 8px 8px; }
+  .one {
+    flex: 1; }
+  .half {
+    flex: 5; }
+  .one-third {
+    flex: 3.3; }
+  .two-thirds {
+    flex: 6.6; }
+  .three-fourths {
+    flex: 7.5; }
+  .one-fourth {
+    flex: 2.5; } }
