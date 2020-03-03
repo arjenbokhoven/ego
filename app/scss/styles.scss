@@ -1,5 +1,12 @@
-@import "reset";
-@import "typography";
-@import "colors";
-@import "layout";
-@import "layout-examples";
+@import "modules/colors";
+
+@import "partials/reset";
+@import "partials/normalize";
+@import "partials/layout";
+@import "partials/layout-examples";
+@import "partials/typography";
+
+// Third-party stuff
+// @import "vendor/simple-typography/mixins";
+// @import "vendor/simple-typography/reset";
+// @import "vendor/simple-typography/style.scss";
