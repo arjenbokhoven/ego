@@ -1,6 +1,6 @@
 .container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 720px;
   padding: 0 16px;
 }
 
@@ -23,7 +23,7 @@
   margin: 8px 0 8px 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 720px) {
   .column {
     flex: 1;
   }

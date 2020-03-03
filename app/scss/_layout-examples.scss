@@ -5,7 +5,7 @@
   margin: 8px 0 8px 0;
 }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 720px) {
   .column-example {
     flex: 1;
   }
@@ -15,34 +15,31 @@
   .column-example:last-child {
     margin: 8px 0 8px 8px;
   }
-  @media screen and (min-width: 800px) {
-    .column {
-      flex: 1;
-    }
-  
-    .one {
-      flex: 1;
-    }
-  
-    .half {
-      flex: 5;
-    }
-  
-    .one-third {
-      flex: 3.3;
-    }
-  
-    .two-thirds {
-      flex: 6.6;
-    }
-  
-    .three-fourths {
-      flex: 7.5;
-    }
-  
-    .one-fourth {
-      flex: 2.5;
-    }
+  .column {
+    flex: 1;
   }
-  
+
+  .one {
+    flex: 1;
+  }
+
+  .half {
+    flex: 5;
+  }
+
+  .one-third {
+    flex: 3.3;
+  }
+
+  .two-thirds {
+    flex: 6.6;
+  }
+
+  .three-fourths {
+    flex: 7.5;
+  }
+
+  .one-fourth {
+    flex: 2.5;
+  }
 }
