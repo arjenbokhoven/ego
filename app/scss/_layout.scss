@@ -1,8 +1,7 @@
 .container {
   margin: 0 auto;
   padding: 0 16px;
-  max-width: 1000px;
-  border: 1px solid red;
+  max-width: 960px;
 }
 
 // grid system
@@ -44,12 +43,4 @@
   .column {
     float: left;
   }
-}
-
-.column:first-child {
-  margin-left: 0;
-}
-
-.column-bg {
-  background-color: lightgray;
 }

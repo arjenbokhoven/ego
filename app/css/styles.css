@@ -9,8 +9,7 @@ html {
 .container {
   margin: 0 auto;
   padding: 0 16px;
-  max-width: 1000px;
-  border: 1px solid red; }
+  max-width: 960px; }
 
 .row::before,
 .row::after {
@@ -41,9 +40,3 @@ html {
     width: calc(100% / 4 * 3); }
   .column {
     float: left; } }
-
-.column:first-child {
-  margin-left: 0; }
-
-.column-bg {
-  background-color: lightgray; }
