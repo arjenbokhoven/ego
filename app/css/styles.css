@@ -108,7 +108,7 @@ table {
   -ms-text-size-adjust: 100%; }
 
 h1, h2, h3, h4, h5, h6 {
-  margin-top: 36px;
+  margin-top: 43.2px;
   color: #000000;
   line-height: 1.25em;
   font-weight: 700; }
@@ -117,32 +117,32 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   font-size: 2.5rem;
-  margin-bottom: 24px; }
+  margin-bottom: 28.8px; }
 
 h2 {
   font-size: 1.92308rem;
-  margin-bottom: 18.46154px; }
+  margin-bottom: 22.15385px; }
 
 h3 {
   font-size: 1.66667rem;
-  margin-bottom: 16px; }
+  margin-bottom: 19.2px; }
 
 h4 {
   font-size: 1.47059rem;
-  margin-bottom: 14.11765px; }
+  margin-bottom: 16.94118px; }
 
 h5 {
   font-size: 1.38889rem;
-  margin-bottom: 13.33333px; }
+  margin-bottom: 16px; }
 
 h6 {
   font-size: 1.25rem;
-  margin-bottom: 12px; }
+  margin-bottom: 14.4px; }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 24px;
   font-size: 1.0625rem;
-  line-height: 1.5em;
+  line-height: 1.8em;
   color: #505050; }
   p:last-of-type {
     margin-bottom: 0; }
@@ -155,11 +155,11 @@ a {
 
 ul,
 ol {
-  margin: 20px 0 0 20px; }
+  margin: 24px 0 0 20px; }
   ul li,
   ol li {
     margin-top: 10px;
-    line-height: 1.5em;
+    line-height: 1.8em;
     color: #505050; }
   ul ul,
   ul ol,
@@ -183,7 +183,7 @@ hr {
   background-color: #DADADA; }
 
 blockquote {
-  margin: 30px 0;
+  margin: 36px 0;
   font-size: 1.4375rem;
   line-height: 1.5em;
   color: #505050;
@@ -192,7 +192,7 @@ blockquote {
 
 table {
   width: 100%;
-  margin: 30px 0;
+  margin: 36px 0;
   border-collapse: collapse; }
 
 table, td, th {
@@ -206,14 +206,14 @@ th, td {
   padding: 15px; }
 
 figure {
-  margin: 30px 0; }
+  margin: 36px 0; }
   figure img {
     margin: 0; }
 
 figcaption {
   margin-top: 10px;
   color: #6a6a6a;
-  font-size: 16px; }
+  font-size: 19.2px; }
 
 pre {
   display: block;
@@ -254,11 +254,11 @@ b,
 img {
   display: block;
   max-width: 100%;
-  margin: 30px 0; }
+  margin: 36px 0; }
 
 .container {
   margin: 0 auto;
-  max-width: 960px;
+  max-width: 720px;
   padding: 0 16px; }
 
 .section {
@@ -275,7 +275,7 @@ img {
   padding: 8px;
   margin: 8px 0 8px 0; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 720px) {
   .column {
     flex: 1; }
   .one {
@@ -297,15 +297,13 @@ img {
   padding: 8px;
   margin: 8px 0 8px 0; }
 
-@media screen and (min-width: 800px) {
+@media screen and (min-width: 720px) {
   .column-example {
     flex: 1; }
   .column-example:first-child {
     margin: 8px 8px 8px 0; }
   .column-example:last-child {
-    margin: 8px 0 8px 8px; } }
-
-@media screen and (min-width: 800px) and (min-width: 800px) {
+    margin: 8px 0 8px 8px; }
   .column {
     flex: 1; }
   .one {
