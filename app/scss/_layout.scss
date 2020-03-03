@@ -1,0 +1,55 @@
+.container {
+  margin: 0 auto;
+  padding: 0 16px;
+  max-width: 1000px;
+  border: 1px solid red;
+}
+
+// grid system
+.row::before,
+.row::after {
+  display: table;
+  content: ' ';
+  clear: both;
+}
+
+.one,
+.one-third,
+.two-thirds,
+.one-fourth,
+.three-fourths,
+.half {
+  width: 100%;
+}
+
+@media only screen and (min-width: 800px) {
+  .one {
+    width: 100%;
+  }
+  .half {
+    width: calc(100% / 2);
+  }
+  .one-third {
+    width: calc(100% / 3);
+  }
+  .one-fourth {
+    width: calc(100% / 4);
+  }
+  .two-thirds {
+    width: calc(100% / 3 * 2);
+  }
+  .three-fourths {
+    width: calc(100% / 4 * 3);
+  }
+  .column {
+    float: left;
+  }
+}
+
+.column:first-child {
+  margin-left: 0;
+}
+
+.column-bg {
+  background-color: lightgray;
+}
