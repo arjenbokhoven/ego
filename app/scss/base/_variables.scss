@@ -21,10 +21,11 @@ $mobile: $small !default;
 $background: white !default;
 $text-color: #383848;
 $primary-color: #319795;
-$heading-color: $primary-color;
+$heading-color:  lighten($text-color, 15%);
 $secondary-background: #f0f0f0;
 $link-color: $primary-color;
 $link-hover-color: lighten($link-color, 15%);
+$code-color: #f14745;
 
 //==============================================================================
 // Borders
@@ -33,7 +34,7 @@ $link-hover-color: lighten($link-color, 15%);
 $border-width: 1px !default;
 $border-style: solid !default;
 $border-color: #dedede !default;
-$border-radius: 4px !default;
+$border-radius: 8px !default;
 $borders: $border-width $border-style $border-color !default;
 
 //------------------------------------------------------------------------------
@@ -72,7 +73,7 @@ $h5: 1.25rem !default;
 
 // Code fonts
 $code-family: monospace;
-$code-color: $text-color;
+$code-color: $code-color;
 $code-background: $secondary-background !default;
 $code-borders: $borders !default;
 $code-size: 14px !default;
