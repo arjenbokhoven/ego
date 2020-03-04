@@ -1,4 +1,5 @@
-@import "modules/colors";
+// Modules don't output any CSS, just variables etc
+@import "modules/variables";
 
 @import "partials/reset";
 @import "partials/normalize";
