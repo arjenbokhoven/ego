@@ -11,5 +11,13 @@
 }
 
 .section {
-  margin: 0 0 3rem 0;
+  margin: 8rem 0;
+  &.cta {
+    background-color: $primary-color;
+    margin: 0;
+    min-height: 50vh;
+    display: flex;
+    align-items: center;
+    color: $secondary-color;
+  }
 }
