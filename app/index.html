@@ -16,61 +16,113 @@
         <p>ego is a CSS framework built while coping with boredom.</p>
       </div>
       <div class="section">
-        <h2>The "content" & "section" classes</h2>
+        <h2>Container class</h2>
         <p>
-          Encapsulating all the content is a "container" class that keeps
-          content at a width of 768 pixels, and then shrinks down to 100% on any
-          device with a lower screen resolution. The "section" class has a nice
-          openness with a bottom margin set to 6rem.
+          Encapsulating all the content is a <code>container</code> class in three different breakpoints.
         </p>
       </div>
       <div class="section">
-        <h2>Breakpoints</h2>
-        <p>
-          ego uses only one breakpoint: 768 pixels. Anything above that is
-          constrained to the container class. This keeps things simple and
-          elegant. No overt calculations etc.
-        </p>
+        <h3>Breakpoints</h3>
+        <table>
+          <thead>
+            <tr>
+              <th>small</th>
+              <th>medium</th>
+              <th>large</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>720px</td>
+              <td>1000px</td>
+              <td>1200px</td>
+            </tr>
+          </tbody>
+        </table>
       </div>
       <div class="section">
-        <h2>Flexbox grid</h2>
+        <h3>Flexbox grid</h3>
         <p>
-          Using rows and columns with modifiers, it's easy to make interesting
-          layouts. Who needs 12 columns?.
+          The <code>flex-l</code> grid items have breakpoints of 1000 pixels of
+          their parent container. The <code>flex-s</code> grid items have
+          breakpoints of 720 pixels of their parent container. This mobile-first
+          approach makes all grid items stack on small screens.
         </p>
         <div class="grid">
           <div class="flex-row">
-            <div class="flex-l">
-              <p>Flex L</p>
+            <div class="flex-l example">
+              <p><code>flex-l</code></p>
             </div>
           </div>
           <div class="flex-row">
-            <div class="flex-l">
-              <p>Flex L</p>
+            <div class="flex-l example">
+              <p><code>flex-l</code></p>
             </div>
-            <div class="flex-l">
-              <p>Flex L</p>
+            <div class="flex-l example">
+              <p><code>flex-l</code></p>
             </div>
           </div>
           <div class="flex-row">
-            <div class="flex-s">
-              <p>Flex S</p>
+            <div class="flex-s example">
+              <p><code>flex-s</code></p>
             </div>
-            <div class="flex-s">
-              <p>Flex S</p>
+            <div class="flex-s example">
+              <p><code>flex-s</code></p>
             </div>
-            <div class="flex-s">
-              <p>Flex S</p>
+            <div class="flex-s example">
+              <p><code>flex-s</code></p>
             </div>
           </div>
         </div>
       </div>
       <div class="section">
-        <pre class="language-html">
-        <code class="language-html">
-          &lt;div class="flex-s">
-          &lt;p>Flex S&lt;/p>
-          &lt;/div>
+        <h3>In practice</h3>
+        <p>It's easy to create multi-column layouts without complicated column classes.</p>
+        <div class="flex-row">
+          <div class="flex-s">
+            <h4>Here's a heading</h4>
+            <p>Nisi proident cillum duis aute officia aliquip aute adipisicing ea eu et. Exercitation cillum amet ea non velit et deserunt minim in adipisicing. Mollit elit quis culpa excepteur qui sint minim.</p>
+          </div>
+          <div class="flex-s">
+            <h4>Have another one</h4>
+            <p>Nisi proident cillum duis aute officia aliquip aute adipisicing ea eu et. Exercitation cillum amet ea non velit et deserunt minim in adipisicing. Mollit elit quis culpa excepteur qui sint minim.</p>
+          </div>
+          <div class="flex-s">
+            <h4>Give me the heading</h4>
+            <p>Nisi proident cillum duis aute officia aliquip aute adipisicing ea eu et. Exercitation cillum amet ea non velit et deserunt minim in adipisicing. Mollit elit quis culpa excepteur qui sint minim.</p>
+          </div>
+        </div>
+      </div>
+        <div class="section">
+        <h3>Code</h3>
+        <pre>
+        <code>
+          &lt;div class="grid">
+            &lt;div class="flex-row">
+              &lt;div class="flex-l">
+                &lt;p>flex-l&lt;/p>
+              &lt;/div>
+            &lt;/div>
+            &lt;div class="flex-row">
+              &lt;div class="flex-l">
+                &lt;p>flex-l&lt;/p>
+              &lt;/div>
+              &lt;div class="flex-l">
+                &lt;p>flex-l&lt;/p>
+              &lt;/div>
+            &lt;/div>
+            &lt;div class="flex-row">
+              &lt;div class="flex-s">
+                &lt;p>flex-s&lt;/p>
+              &lt;/div>
+              &lt;div class="flex-s">
+                &lt;p>flex-s&lt;/p>
+              &lt;/div>
+              &lt;div class="flex-s">
+                &lt;p>flex-s&lt;/p>
+              &lt;/div>
+            &lt;/div>
+          &lt;/div>       
         </code>
       </pre>
       </div>
