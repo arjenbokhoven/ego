@@ -5,7 +5,6 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
-@import url("https://fonts.googleapis.com/css?family=Open+Sans&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -315,36 +314,128 @@ html {
 figure {
   margin: 0; }
 
-.row {
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: normal normal normal 1rem/1.8 -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-size: 1rem; }
+
+body {
+  color: #383848;
+  background: white;
+  font-size: 1rem; }
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: 1.5rem 0;
+  font-weight: bold;
+  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  line-height: 1.2;
+  color: #319795; }
+  h1:not(:first-child),
+  h2:not(:first-child),
+  h3:not(:first-child),
+  h4:not(:first-child),
+  h5:not(:first-child) {
+    margin: 1.5rem 0; }
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child) {
+  margin-top: 2rem; }
+
+h1 {
+  font-size: 1.75rem; }
+
+h2 {
+  font-size: 1.5rem; }
+
+h3 {
+  font-size: 1.25rem; }
+
+h4 {
+  font-size: 1.1rem; }
+
+h5 {
+  font-size: 1rem; }
+
+@media (min-width: 720px) {
+  h1:not(:first-child),
+  h2:not(:first-child),
+  h3:not(:first-child) {
+    margin-top: 2.5rem; }
+  h1 {
+    font-size: 2.25rem; }
+  h2 {
+    font-size: 2rem; }
+  h3 {
+    font-size: 1.75rem; }
+  h4 {
+    font-size: 1.5rem; }
+  h5 {
+    font-size: 1.25rem; } }
+
+a {
+  color: #319795;
+  text-decoration: underline; }
+  a:hover, a:active, a:focus {
+    color: #4fc6c3;
+    text-decoration: underline; }
+
+pre {
+  border: 1px solid #dedede;
+  border-radius: 4px;
+  background: #f0f0f0;
+  padding: 1rem;
+  tab-size: 2;
+  color: #383848;
+  font-family: monospace;
+  font-size: 14px;
+  margin: 0 0 1.5rem 0; }
+  pre code {
+    font-family: monospace;
+    line-height: 1.2; }
+
+.flex-s,
+.flex-l {
+  padding-left: 16px;
+  padding-right: 16px; }
+
+.flex-row {
+  margin-left: -16px;
+  margin-right: -16px; }
+
+.flex-row {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap; }
 
-@media (min-width: 768px) {
-  .column {
-    flex: 1;
-    margin-bottom: 0;
-    flex-basis: 100%;
-    background-color: lightgray;
-    padding: 8px;
-    margin: 8px 0 8px 0; }
-  .one {
-    flex: 1; }
-  .half {
-    flex: 5; }
-  .one-third {
-    flex: 3.3; }
-  .two-thirds {
-    flex: 6.6; }
-  .three-fourths {
-    flex: 7.5; }
-  .one-fourth {
-    flex: 2.5; } }
+.flex-s,
+.flex-l {
+  flex-basis: 100%;
+  margin-bottom: 16px;
+  background-color: #f0f0f0;
+  margin: 8px; }
+
+@media (min-width: 1000px) {
+  .flex-l {
+    flex: 1; } }
+
+@media (min-width: 720px) {
+  .flex-s {
+    flex: 1; } }
 
 .container {
   margin: 0 auto;
-  max-width: 768px;
+  max-width: 1200px;
   padding: 0 16px; }
+  .container.medium {
+    max-width: 1000px; }
+  .container.small {
+    max-width: 720px; }
 
 .section {
-  margin: 0 0 6rem 0; }
+  margin: 0 0 3rem 0; }
