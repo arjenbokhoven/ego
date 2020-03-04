@@ -21,6 +21,7 @@ $mobile: $small !default;
 $background: white !default;
 $text-color: #383848;
 $primary-color: #319795;
+$secondary-color: #f0f0f0;
 $heading-color:  lighten($text-color, 15%);
 $secondary-background: #f0f0f0;
 $link-color: $primary-color;
@@ -92,4 +93,12 @@ $margins: 1rem !default;
 $card-background: $secondary-background;
 $card-border: $borders;
 $card-border-radius: $border-radius;
+
+//==============================================================================
+// buttons
+//==============================================================================
+
+$button-background: $secondary-background;
+$button-border: $borders;
+$button-border-radius: $border-radius;
 
