@@ -330,7 +330,7 @@ h2,
 h3,
 h4,
 h5 {
-  margin: 1.5rem 0;
+  margin: 1rem 0;
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
@@ -344,8 +344,11 @@ h5 {
 
 h1:not(:first-child),
 h2:not(:first-child),
-h3:not(:first-child) {
-  margin-top: 2rem; }
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
+  margin-top: 4rem; }
 
 h1 {
   font-size: 1.75rem; }
@@ -394,7 +397,7 @@ pre {
   color: #f14745;
   font-family: monospace;
   font-size: 14px;
-  margin: 0 0 1.5rem 0; }
+  margin: 0 0 1rem 0; }
   pre code {
     font-family: monospace;
     line-height: 1.2; }
@@ -405,6 +408,12 @@ table {
 th, td {
   text-align: left;
   padding: .5rem; }
+
+.card {
+  background: #f0f0f0;
+  border: 1px solid #dedede;
+  border-radius: 8px;
+  margin: 1rem; }
 
 .flex-s,
 .flex-l {
