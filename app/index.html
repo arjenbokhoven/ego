@@ -5,80 +5,115 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>ego - A CSS Framework</title>
-    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/main.css" />
+    <link rel="stylesheet" href="css/vendor/prism.css" />
     <link rel="icon" href="images/favicon.png" />
   </head>
   <body>
-    <div class="container">
+    <div class="container medium">
       <div class="section">
         <h1>ego - A CSS Framework</h1>
         <p>ego is a CSS framework built while coping with boredom.</p>
       </div>
       <div class="section">
         <h2>The "content" & "section" classes</h2>
-        <p>Encapsulating all the content is a "container" class that keeps content at a width of 768 pixels, and then shrinks down to 100% on any device with a lower screen resolution.</p>
-        <p>The "section" class has a nice openness with a bottom margin set to 6rem.</p>
+        <p>
+          Encapsulating all the content is a "container" class that keeps
+          content at a width of 768 pixels, and then shrinks down to 100% on any
+          device with a lower screen resolution. The "section" class has a nice
+          openness with a bottom margin set to 6rem.
+        </p>
+      </div>
+      <div class="section">
+        <h2>Breakpoints</h2>
+        <p>
+          ego uses only one breakpoint: 768 pixels. Anything above that is
+          constrained to the container class. This keeps things simple and
+          elegant. No overt calculations etc.
+        </p>
       </div>
       <div class="section">
         <h2>Flexbox grid</h2>
-        <p>Using rows and columns with modifiers, it's easy to make interesting layouts. Who needs 12 columns?.</p>
+        <p>
+          Using rows and columns with modifiers, it's easy to make interesting
+          layouts. Who needs 12 columns?.
+        </p>
         <div class="grid">
-          <div class="row">
-            <div class="one-fourth column-example">
-              <p>one-fourth</p>
-            </div>
-            <div class="three-fourths column-example">
-              <p>three-fourths</p>
+          <div class="flex-row">
+            <div class="flex-l">
+              <p>Flex L</p>
             </div>
           </div>
-          <div class="row">
-            <div class="one-third column-example">
-              <p>one-third</p>
+          <div class="flex-row">
+            <div class="flex-l">
+              <p>Flex L</p>
             </div>
-            <div class="two-thirds column-example">
-              <p>two-thirds</p>
-            </div>
-          </div>
-          <div class="row">
-            <div class="half column-example">
-              <p>half</p>
-            </div>
-            <div class="half column-example">
-              <p>half</p>
+            <div class="flex-l">
+              <p>Flex L</p>
             </div>
           </div>
-          <div class="row">
-            <div class="two-thirds column-example">
-              <p>two-thirds</p>
+          <div class="flex-row">
+            <div class="flex-s">
+              <p>Flex S</p>
             </div>
-            <div class="one-third column-example">
-              <p>one-third</p>
+            <div class="flex-s">
+              <p>Flex S</p>
             </div>
-          </div>
-          <div class="row">
-            <div class="three-fourths column-example">
-              <p>three-fourths</p>
-            </div>
-            <div class="one-fourth column-example">
-              <p>one-fourth</p>
+            <div class="flex-s">
+              <p>Flex S</p>
             </div>
           </div>
         </div>
-            <pre>
-              Some code
-            </pre>
+      </div>
+      <div class="section">
+        <pre class="language-html">
+        <code class="language-html">
+          &lt;div class="flex-s">
+          &lt;p>Flex S&lt;/p>
+          &lt;/div>
+        </code>
+      </pre>
       </div>
       <div class="section">
         <h2>Typography</h2>
         <p>Type classes are kept simple, i.e., no dynamic scaling.</p>
         <!-- Standard Headings -->
         <h1>Heading 1</h1>
+        <p>
+          Nisi proident cillum duis aute officia aliquip aute adipisicing ea eu
+          et. Exercitation cillum amet ea non velit et deserunt minim in
+          adipisicing. Mollit elit quis culpa excepteur qui sint minim.
+        </p>
         <h2>Heading 2</h2>
+        <p>
+          Nisi proident cillum duis aute officia aliquip aute adipisicing ea eu
+          et. Exercitation cillum amet ea non velit et deserunt minim in
+          adipisicing. Mollit elit quis culpa excepteur qui sint minim.
+        </p>
         <h3>Heading 3</h3>
+        <p>
+          Nisi proident cillum duis aute officia aliquip aute adipisicing ea eu
+          et. Exercitation cillum amet ea non velit et deserunt minim in
+          adipisicing. Mollit elit quis culpa excepteur qui sint minim.
+        </p>
         <h4>Heading 4</h4>
+        <p>
+          Nisi proident cillum duis aute officia aliquip aute adipisicing ea eu
+          et. Exercitation cillum amet ea non velit et deserunt minim in
+          adipisicing. Mollit elit quis culpa excepteur qui sint minim.
+        </p>
         <h5>Heading 5</h5>
+        <p>
+          Nisi proident cillum duis aute officia aliquip aute adipisicing ea eu
+          et. Exercitation cillum amet ea non velit et deserunt minim in
+          adipisicing. Mollit elit quis culpa excepteur qui sint minim.
+        </p>
         <h6>Heading 6</h6>
-
+        <p>
+          Nisi proident cillum duis aute officia aliquip aute adipisicing ea eu
+          et. Exercitation cillum amet ea non velit et deserunt minim in
+          adipisicing. Mollit elit quis culpa excepteur qui sint minim.
+        </p>
         <!-- Base type size -->
         <p>
           Nisi proident cillum duis aute officia aliquip aute adipisicing ea eu
@@ -88,10 +123,10 @@
         <!-- Other styled text tags -->
         <p><strong>Bolded</strong></p>
         <p><em>Italicized</em></p>
-        <p><a>Colored</a></>
+        <p><a href="#!">Colored</a></p>
         <p><u>Underlined</u></p>
       </div>
     </div>
-    <script src="js/scripts.js"></script>
+    <script src="js/prism.js"></script>
   </body>
 </html>
