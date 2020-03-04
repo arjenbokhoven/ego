@@ -1,42 +1,41 @@
 // grid system
 
-.row {
+$column-padding: 16px;
+$margin-bottom: 16px;
+
+%column-padding {
+  padding-left: $column-padding;
+  padding-right: $column-padding;
+}
+
+%row-margin {
+  margin-left: -$column-padding;
+  margin-right: -$column-padding;
+}
+
+.flex-row {
+  @extend %row-margin;
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
 }
 
-@include large-breakpoint {
-  .column {
+.flex-s,
+.flex-l {
+  @extend %column-padding;
+  flex-basis: 100%;
+  margin-bottom: $margin-bottom;
+  background-color: $secondary-background;
+  margin: 8px;
+}
+
+@include medium-breakpoint {
+  .flex-l {
     flex: 1;
-    margin-bottom: 0;
-    flex-basis: 100%;
-    background-color: lightgray;
-    padding: 8px;
-    margin: 8px 0 8px 0;
   }
-
-  .one {
+}
+@include small-breakpoint {
+  .flex-s {
     flex: 1;
-  }
-
-  .half {
-    flex: 5;
-  }
-
-  .one-third {
-    flex: 3.3;
-  }
-
-  .two-thirds {
-    flex: 6.6;
-  }
-
-  .three-fourths {
-    flex: 7.5;
-  }
-
-  .one-fourth {
-    flex: 2.5;
   }
 }
