@@ -334,7 +334,7 @@ h5 {
   font-weight: bold;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
-  color: #319795; }
+  color: #595973; }
   h1:not(:first-child),
   h2:not(:first-child),
   h3:not(:first-child),
@@ -387,17 +387,24 @@ a {
 
 pre {
   border: 1px solid #dedede;
-  border-radius: 4px;
+  border-radius: 8px;
   background: #f0f0f0;
   padding: 1rem;
   tab-size: 2;
-  color: #383848;
+  color: #f14745;
   font-family: monospace;
   font-size: 14px;
   margin: 0 0 1.5rem 0; }
   pre code {
     font-family: monospace;
     line-height: 1.2; }
+
+table {
+  min-width: 100%; }
+
+th, td {
+  text-align: left;
+  padding: .5rem; }
 
 .flex-s,
 .flex-l {
@@ -415,10 +422,14 @@ pre {
 
 .flex-s,
 .flex-l {
-  flex-basis: 100%;
-  margin-bottom: 16px;
-  background-color: #f0f0f0;
-  margin: 8px; }
+  flex-basis: 100%; }
+  .flex-s.example,
+  .flex-l.example {
+    margin-bottom: 16px;
+    background-color: #f0f0f0;
+    border: 1px solid #dedede;
+    border-radius: 8px;
+    margin: 8px; }
 
 @media (min-width: 1000px) {
   .flex-l {

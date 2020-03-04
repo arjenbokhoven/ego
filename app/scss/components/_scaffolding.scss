@@ -99,7 +99,7 @@ h5 {
     }
   }
 
-  // Code block styling
+// Code block styling
 pre {
   border: $borders;
   border-radius: $border-radius;
@@ -115,4 +115,12 @@ pre {
     font-family: $code-family;
     line-height: 1.2;
   }
+}
+
+table {
+  min-width: 100%;
+}
+th, td {
+  text-align: left;
+  padding: .5rem;
 }
