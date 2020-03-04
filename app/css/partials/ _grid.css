@@ -1,0 +1,26 @@
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap; }
+
+.column {
+  flex-basis: 100%;
+  background-color: lightgray;
+  padding: 8px;
+  margin: 8px 0 8px 0; }
+
+@media screen and (min-width: 768px) {
+  .column {
+    flex: 1; }
+  .one {
+    flex: 1; }
+  .half {
+    flex: 5; }
+  .one-third {
+    flex: 3.3; }
+  .two-thirds {
+    flex: 6.6; }
+  .three-fourths {
+    flex: 7.5; }
+  .one-fourth {
+    flex: 2.5; } }

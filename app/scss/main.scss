@@ -1,13 +1,12 @@
-// Modules don't output any CSS, just variables etc
-@import "modules/variables";
+// Configure the whole shebang
+@import "base/variables";
+@import "base/mixins";
 
-@import "partials/reset";
-@import "partials/normalize";
-@import "partials/layout";
-@import "partials/layout-examples";
-@import "partials/typography";
+// Reset
+@import "base/normalize";
+@import "base/reset";
 
-// Third-party stuff
-// @import "vendor/simple-typography/mixins";
-// @import "vendor/simple-typography/reset";
-// @import "vendor/simple-typography/style.scss";
+// Components
+@import "components/grid";
+@import "components/layout";
+@import "components/typography";

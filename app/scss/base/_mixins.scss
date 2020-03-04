@@ -1,0 +1,6 @@
+// Break on desktop
+@mixin large-breakpoint {
+  @media (min-width: #{$desktop}) {
+    @content;
+  }
+}
