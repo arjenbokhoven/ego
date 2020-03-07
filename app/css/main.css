@@ -524,8 +524,32 @@ th, td {
   .btn-danger:hover, .btn-danger:focus {
     background-color: #e04b67; }
 
+.btn-square {
+  border-radius: 0; }
+
+.btn-round {
+  border-radius: 1.6rem; }
+
+.btn-full {
+  width: 100%; }
+
+.btn-large {
+  font-size: 1rem;
+  padding: 1.5rem; }
+
 .card {
   background: #f0f0f0;
   border: 1px solid #dedede;
   border-radius: 8px;
   margin: 1rem; }
+
+table {
+  border-collapse: collapse;
+  width: 100%; }
+
+th, td {
+  border-bottom: 1px solid #dedede;
+  padding: 1rem; }
+
+th:table-centered {
+  text-align: center; }

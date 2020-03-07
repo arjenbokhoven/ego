@@ -83,3 +83,20 @@
     background-color: lighten($button-danger-color, 5%);
   }
 }
+
+.btn-square {
+  border-radius: $button-border-square;
+}
+
+.btn-round {
+  border-radius: $button-border-round;
+}
+
+.btn-full {
+  width: $button-full-width;
+}
+
+.btn-large {
+  font-size: $button-large-font;
+  padding: $button-large-padding;
+}
