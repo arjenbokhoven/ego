@@ -1,1 +1,124 @@
-@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap');
+
+// HTML base
+html {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font: $font-style $font-variant $font-weight #{$font-size}/#{$line-height} $font-family;
+  font-size: $font-size;
+}
+
+// Body base
+body {
+  color: $font-color;
+  background: $background;
+  font-size: $body-font-size;
+}
+
+// Headings
+h1,
+h2,
+h3,
+h4,
+h5 {
+  margin: $margins 0;
+  font-weight: $heading-font-weight;
+  font-family: $heading-font-family;
+  line-height: $heading-line-height;
+  color: $heading-color;
+
+  &:not(:first-child) {
+    margin: 1.5rem 0;
+  }
+}
+
+
+h1:not(:first-child),
+h2:not(:first-child),
+h3:not(:first-child),
+h4:not(:first-child),
+h5:not(:first-child),
+h6:not(:first-child) {
+  margin-top: 4rem;
+}
+
+// Heading individual styles
+h1 {
+  font-size: $h1-mobile;
+}
+
+h2 {
+  font-size: $h2-mobile;
+}
+
+h3 {
+  font-size: $h3-mobile;
+}
+
+h4 {
+  font-size: $h4-mobile;
+}
+
+h5 {
+  font-size: $h5-mobile;
+}
+
+@include small-breakpoint {
+
+  // Increased margin on additional headings
+  h1:not(:first-child),
+  h2:not(:first-child),
+  h3:not(:first-child) {
+    margin-top: 2.5rem;
+  }
+    // Heading desktop individual styles
+    h1 {
+      font-size: $h1;
+    }
+  
+    h2 {
+      font-size: $h2;
+    }
+  
+    h3 {
+      font-size: $h3;
+    }
+  
+    h4 {
+      font-size: $h4;
+    }
+  
+    h5 {
+      font-size: $h5;
+    }
+  }
+
+  a {
+    color: $link-color;
+    text-decoration: underline;
+
+    &:hover,
+    &:active,
+    &:focus {
+      color: $link-hover-color;
+      text-decoration: underline;
+    }
+  }
+
+// Code block styling
+pre {
+  border: $borders;
+  border-radius: $border-radius;
+  background: $code-background;
+  padding: 1rem;
+  tab-size: 2;
+  color: $code-color;
+  font-family: $code-family;
+  font-size: $code-size;
+  margin: 0 0 $margins 0;
+
+  code {
+    font-family: $code-family;
+    line-height: 1.2;
+  }
+}
