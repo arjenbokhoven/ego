@@ -1,0 +1,14 @@
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+th,
+td {
+  border-bottom: 1px solid $border-color;
+  padding: 1rem;
+}
+
+th:table-centered {
+  text-align: center;
+}
