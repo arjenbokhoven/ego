@@ -13,7 +13,7 @@ button {
   line-height: normal;
   text-decoration: none;
   text-align: center;
-  letter-spacing: 0.5px;
+  letter-spacing: $button-letter-spacing;
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
