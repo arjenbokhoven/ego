@@ -22,11 +22,24 @@ $background: white !default;
 $text-color: #383848;
 $primary-color: #319795;
 $secondary-color: #f0f0f0;
+$white: #fff;
 $heading-color:  lighten($text-color, 15%);
 $secondary-background: #f0f0f0;
 $link-color: $primary-color;
 $link-hover-color: lighten($link-color, 15%);
 $code-color: #f14745;
+
+//==============================================================================
+// Buttons
+//==============================================================================
+
+$button-success-color: #4ed372;
+$button-info-color: #3b88d8;
+$button-warning-color: #df9017;
+$button-danger-color: #dc3555;
+$button-font-weight: 600;
+$button-text-transform: uppercase;
+$button-font-size: 0.8rem;
 
 //==============================================================================
 // Borders
@@ -54,7 +67,7 @@ $font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica,
 $line-height: 1.8 !default;
 
 // Headings
-$heading-font-weight: bold;
+$heading-font-weight: 600;
 $heading-font-family: $font-family;
 $heading-line-height: 1.2 !default;
 

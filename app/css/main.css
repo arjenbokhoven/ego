@@ -331,7 +331,7 @@ h3,
 h4,
 h5 {
   margin: 1rem 0;
-  font-weight: bold;
+  font-weight: 600;
   font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
   color: #595973; }
@@ -461,19 +461,68 @@ th, td {
     align-items: center;
     color: #f0f0f0; }
 
-.button {
-  -webkit-appearance: none;
-  background-color: #319795;
+.btn {
+  display: inline-block;
   border: none;
   border-radius: 8px;
-  color: #f0f0f0;
-  padding: 8px 16px;
-  text-align: center;
+  padding: 0.75rem 1rem;
+  margin: 0 1rem 1rem 0;
+  background: #319795;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: normal;
   text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
-  cursor: pointer; }
+  text-align: center;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: all 0.1s ease; }
+  .btn:hover, .btn:focus {
+    background: #3dbebb;
+    color: #f0f0f0;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.11), 0 3px 6px rgba(0, 0, 0, 0.08); }
+  .btn:focus {
+    outline: 1px solid #fff;
+    outline-offset: -4px; }
+  .btn:active {
+    transform: scale(0.99); }
+
+.btn-ghost {
+  background-color: transparent;
+  border: 1px solid #319795;
+  color: #319795; }
+  .btn-ghost:hover, .btn-ghost:focus {
+    border-color: #37aaa8;
+    text-decoration: none;
+    background-color: transparent;
+    color: #37aaa8; }
+  .btn-ghost:active {
+    outline: 1px solid #319795; }
+
+.btn-success {
+  background-color: #4ed372; }
+  .btn-success:hover, .btn-success:focus {
+    background-color: #62d882; }
+
+.btn-info {
+  background-color: #3b88d8; }
+  .btn-info:hover, .btn-info:focus {
+    background-color: #5095dc; }
+
+.btn-warning {
+  background-color: #df9017; }
+  .btn-warning:hover, .btn-warning:focus {
+    background-color: #e99c27; }
+
+.btn-danger {
+  background-color: #dc3555; }
+  .btn-danger:hover, .btn-danger:focus {
+    background-color: #e04b67; }
 
 .card {
   background: #f0f0f0;

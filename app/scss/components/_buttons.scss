@@ -1,14 +1,85 @@
-.button {
-  -webkit-appearance: none;
-  background-color: $primary-color;
-  border: none;
-  border-radius: $button-border-radius;
-  color: $secondary-color;
-  padding: 8px 16px;
-  text-align: center;
-  text-decoration: none;
+.btn {
   display: inline-block;
-  font-size: 16px;
-  margin: 4px 2px;
+  border: none;
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin: 0 1rem 1rem 0;
+  background: $primary-color;
+  color: $white;
+  font-size: 0.8rem;
+  font-weight: $button-font-weight;
+  text-transform: $button-text-transform;
+  line-height: normal;
+  text-decoration: none;
+  text-align: center;
+  letter-spacing: 0.5px;
   cursor: pointer;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  transition: all 0.1s ease;
+  &:hover,
+  &:focus {
+    background: lighten($primary-color, 10%);
+    color: $secondary-color;
+    text-decoration: none;
+    transform: translateY(-2px);
+    box-shadow: 0 7px 14px rgba(50, 50, 93, 0.11), 0 3px 6px rgba(0, 0, 0, 0.08);
+  }
+
+  &:focus {
+    outline: 1px solid $white;
+    outline-offset: -4px;
+  }
+  &:active {
+    transform: scale(0.99);
+  }
+}
+
+.btn-ghost {
+  background-color: transparent;
+  border: 1px solid $primary-color;
+  color: $primary-color;
+  &:hover,
+  &:focus {
+    border-color: lighten($primary-color, 5%);
+    text-decoration: none;
+    background-color: transparent;
+    color: lighten($primary-color, 5%);
+  }
+
+  &:active {
+    outline: 1px solid $primary-color;
+  }
+}
+
+.btn-success {
+  background-color: $button-success-color;
+  &:hover,
+  &:focus {
+    background-color: lighten($button-success-color, 5%);
+  }
+}
+
+.btn-info {
+  background-color: $button-info-color;
+  &:hover,
+  &:focus {
+    background-color: lighten($button-info-color, 5%);
+  }
+}
+
+.btn-warning {
+  background-color: $button-warning-color;
+  &:hover,
+  &:focus {
+    background-color: lighten($button-warning-color, 5%);
+  }
+}
+
+.btn-danger {
+  background-color: $button-danger-color;
+  &:hover,
+  &:focus {
+    background-color: lighten($button-danger-color, 5%);
+  }
 }
