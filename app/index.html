@@ -10,21 +10,26 @@
     <link rel="icon" href="images/favicon.png" />
   </head>
   <body>
-    <div class="section cta">
+    <section class="cta">
       <div class="container small">
         <h1>ego - A CSS Framework</h1>
-        <p>ego is a CSS framework built while coping with boredom.</p>
+        <p>
+          ego is a CSS framework built while coping with boredom. It was built
+          with no performance in mind or even some kind of design methodology.
+          There are developers out there who do WAY better work than this, so
+          consider it a hobby project.
+        </p>
       </div>
-    </div>
+    </section>
     <div class="container medium">
-      <div class="section">
-        <h2>Container class</h2>
+      <section>
+        <h3>Container class</h3>
         <p>
           Encapsulating all the content is a <code>container</code> class in
           three different breakpoints.
         </p>
-      </div>
-      <div class="section">
+      </section>
+      <section>
         <h3>Breakpoints</h3>
         <table>
           <tbody>
@@ -42,8 +47,8 @@
             </tr>
           </tbody>
         </table>
-      </div>
-      <div class="section">
+      </section>
+      <section>
         <h3>Flexbox grid</h3>
         <p>
           The <code>flex-l</code> grid items have breakpoints of 1000 pixels of
@@ -77,8 +82,6 @@
             </div>
           </div>
         </div>
-      </div>
-      <div class="section">
         <h3>In practice</h3>
         <p>
           It's easy to create multi-column layouts without complicated column
@@ -110,9 +113,9 @@
             </p>
           </div>
         </div>
-      </div>
-      <div class="section">
-        <h3>Code</h3>
+      </section>
+      <section>
+        <h4>Code</h4>
         <pre>
         <code>
           &lt;div class="grid">
@@ -120,32 +123,19 @@
               &lt;div class="flex-l">
                 &lt;p>flex-l&lt;/p>
               &lt;/div>
-            &lt;/div>
-            &lt;div class="flex-row">
               &lt;div class="flex-l">
                 &lt;p>flex-l&lt;/p>
               &lt;/div>
               &lt;div class="flex-l">
                 &lt;p>flex-l&lt;/p>
-              &lt;/div>
-            &lt;/div>
-            &lt;div class="flex-row">
-              &lt;div class="flex-s">
-                &lt;p>flex-s&lt;/p>
-              &lt;/div>
-              &lt;div class="flex-s">
-                &lt;p>flex-s&lt;/p>
-              &lt;/div>
-              &lt;div class="flex-s">
-                &lt;p>flex-s&lt;/p>
               &lt;/div>
             &lt;/div>
           &lt;/div>       
         </code>
       </pre>
-      </div>
-      <div class="section">
-        <h2>Typography</h2>
+      </section>
+      <section>
+        <h3>Typography</h3>
         <p>Type classes are kept simple, i.e., no dynamic scaling.</p>
         <!-- Standard Headings -->
         <h1>Heading 1</h1>
@@ -210,47 +200,50 @@
             <div class="flex-s">
               <p><u>Underlined</u></p>
             </div>
+            <div class="flex-s">
+              <p><small>Small text</small></p>
+            </div>
           </div>
         </div>
-      </div>
-      <div class="section">
-        <h2>Buttons</h2>
+      </section>
+      <section>
+        <h3>Buttons</h3>
         <p>
           ego's buttons come in four different varieties. All common color
           varieties are included as well.
         </p>
 
-        <h3>Standard buttons</h3>
+        <h4>Standard buttons</h4>
         <button>Default</button>
         <a href="#!" class="btn">Link</a>
         <input type="button" class="btn" value="Input" />
 
-        <h3>Ghost buttons</h3>
+        <h4>Ghost buttons</h4>
         <button class="btn btn-ghost">Default</button>
         <a href="#!" class="btn btn-ghost">Link</a>
         <input type="button" class="btn btn-ghost" value="Input" />
 
-        <h3>Success buttons</h3>
+        <h4>Success buttons</h4>
         <button class="btn btn-success">Default</button>
         <a href="#!" class="btn btn-success">Link</a>
         <input type="button" class="btn btn-success" value="Input" />
 
-        <h3>Info buttons</h3>
+        <h4>Info buttons</h4>
         <button class="btn btn-info">Default</button>
         <a href="#!" class="btn btn-info">Link</a>
         <input type="button" class="btn btn-info" value="Input" />
 
-        <h3>Warning buttons</h3>
+        <h4>Warning buttons</h4>
         <button class="btn btn-warning">Default</button>
         <a href="#!" class="btn btn-warning">Link</a>
         <input type="button" class="btn btn-warning" value="Input" />
 
-        <h3>Danger buttons</h3>
+        <h4>Danger buttons</h4>
         <button class="btn btn-danger">Default</button>
         <a href="#!" class="btn btn-danger">Link</a>
         <input type="button" class="btn btn-danger" value="Input" />
 
-        <h3>Square buttons</h3>
+        <h4>Square buttons</h4>
         <button class="btn btn-square">Press me</button>
         <button class="btn btn-square btn-ghost">Press me</button>
         <button class="btn btn-square btn-success">Press me</button>
@@ -258,7 +251,7 @@
         <button class="btn btn-square btn-warning">Press me</button>
         <button class="btn btn-square btn-danger">Press me</button>
 
-        <h3>Round buttons</h3>
+        <h4>Round buttons</h4>
         <button class="btn btn-round">Press me</button>
         <button class="btn btn-round btn-ghost">Press me</button>
         <button class="btn btn-round btn-success">Press me</button>
@@ -266,7 +259,7 @@
         <button class="btn btn-round btn-warning">Press me</button>
         <button class="btn btn-round btn-danger">Press me</button>
 
-        <h3>Full-width buttons</h3>
+        <h4>Full-width buttons</h4>
         <button class="btn btn-full">Press me</button>
         <button class="btn btn-full btn-ghost">Press me</button>
         <button class="btn btn-full btn-success">Press me</button>
@@ -274,14 +267,14 @@
         <button class="btn btn-full btn-warning">Press me</button>
         <button class="btn btn-full btn-danger">Press me</button>
 
-        <h3>Large buttons</h3>
+        <h4>Large buttons</h4>
         <button class="btn btn-large">Press me</button>
         <button class="btn btn-large btn-ghost">Press me</button>
         <button class="btn btn-large btn-success">Press me</button>
         <button class="btn btn-large btn-info">Press me</button>
         <button class="btn btn-large btn-warning">Press me</button>
         <button class="btn btn-large btn-danger">Press me</button>
-      </div>
+      </section>
     </div>
     <script src="js/prism.js"></script>
   </body>

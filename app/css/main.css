@@ -5,6 +5,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700&display=swap");
 html {
   line-height: 1.15;
   /* 1 */
@@ -314,10 +315,35 @@ html {
 figure {
   margin: 0; }
 
+.container {
+  margin: 0 auto;
+  max-width: 1200px;
+  padding: 0 16px; }
+  .container.medium {
+    max-width: 1000px; }
+  .container.small {
+    max-width: 720px; }
+
+section {
+  margin: 8rem 0; }
+  section.cta {
+    background-color: #ff9d00;
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
+    background-attachment: fixed;
+    background-size: cover;
+    margin: 0;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    color: #fff; }
+  section.cta h1 {
+    color: #fff;
+    font-size: 3rem; }
+
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: normal normal normal 1rem/1.8 -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: normal normal 400 1rem/1.9 Open Sans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem; }
 
 body {
@@ -331,8 +357,8 @@ h3,
 h4,
 h5 {
   margin: 1rem 0;
-  font-weight: 600;
-  font-family: -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font-weight: 700;
+  font-family: Open Sans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   line-height: 1.2;
   color: #595973; }
   h1:not(:first-child),
@@ -382,10 +408,10 @@ h5 {
     font-size: 1.25rem; } }
 
 a {
-  color: #319795;
+  color: #3A8595;
   text-decoration: underline; }
   a:hover, a:active, a:focus {
-    color: #4fc6c3;
+    color: #5caec0;
     text-decoration: underline; }
 
 pre {
@@ -401,13 +427,6 @@ pre {
   pre code {
     font-family: monospace;
     line-height: 1.2; }
-
-table {
-  min-width: 100%; }
-
-th, td {
-  text-align: left;
-  padding: .5rem; }
 
 .flex-s,
 .flex-l {
@@ -442,25 +461,6 @@ th, td {
   .flex-s {
     flex: 1; } }
 
-.container {
-  margin: 0 auto;
-  max-width: 1200px;
-  padding: 0 16px; }
-  .container.medium {
-    max-width: 1000px; }
-  .container.small {
-    max-width: 720px; }
-
-.section {
-  margin: 8rem 0; }
-  .section.cta {
-    background-color: #319795;
-    margin: 0;
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    color: #f0f0f0; }
-
 .btn,
 button {
   display: inline-block;
@@ -468,7 +468,7 @@ button {
   border-radius: 8px;
   padding: 0.85rem 1.2rem;
   margin: 0 1rem 1rem 0;
-  background: #319795;
+  background: #3A8595;
   color: #fff;
   font-size: 0.9rem;
   font-weight: 600;
@@ -484,7 +484,7 @@ button {
   .btn:hover, .btn:focus,
   button:hover,
   button:focus {
-    background: #3dbebb;
+    background: #4195a7;
     color: #f0f0f0;
     text-decoration: none;
     transform: translateY(-2px);
@@ -499,30 +499,30 @@ button {
 
 .btn-ghost {
   background-color: transparent;
-  border: 1px solid #319795;
-  color: #319795; }
+  border: 1px solid #3A8595;
+  color: #3A8595; }
   .btn-ghost:hover, .btn-ghost:focus {
-    border-color: #37aaa8;
+    border-color: #4195a7;
     text-decoration: none;
     background-color: transparent;
-    color: #37aaa8; }
+    color: #4195a7; }
   .btn-ghost:active {
-    outline: 1px solid #319795; }
+    outline: 1px solid #3A8595; }
 
 .btn-success {
-  background-color: #4ed372; }
+  background-color: #4ed391; }
   .btn-success:hover, .btn-success:focus {
-    background-color: #62d882; }
+    background-color: #62d89e; }
 
 .btn-info {
-  background-color: #3b88d8; }
+  background-color: #4844e9; }
   .btn-info:hover, .btn-info:focus {
-    background-color: #5095dc; }
+    background-color: #5e5bec; }
 
 .btn-warning {
-  background-color: #df9017; }
+  background-color: #FB8731; }
   .btn-warning:hover, .btn-warning:focus {
-    background-color: #e99c27; }
+    background-color: #fb964a; }
 
 .btn-danger {
   background-color: #dc3555; }
@@ -550,11 +550,10 @@ button {
 
 table {
   border-collapse: collapse;
-  width: 100%; }
+  min-width: 100%; }
 
-th, td {
+th,
+td {
   border-bottom: 1px solid #dedede;
-  padding: 1rem; }
-
-th:table-centered {
+  padding: 1rem;
   text-align: center; }
