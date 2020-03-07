@@ -461,7 +461,8 @@ th, td {
     align-items: center;
     color: #f0f0f0; }
 
-.btn {
+.btn,
+button {
   display: inline-block;
   border: none;
   border-radius: 8px;
@@ -480,16 +481,20 @@ th, td {
   -webkit-appearance: none;
   -moz-appearance: none;
   transition: all 0.1s ease; }
-  .btn:hover, .btn:focus {
+  .btn:hover, .btn:focus,
+  button:hover,
+  button:focus {
     background: #3dbebb;
     color: #f0f0f0;
     text-decoration: none;
     transform: translateY(-2px);
     box-shadow: 0 7px 14px rgba(50, 50, 93, 0.11), 0 3px 6px rgba(0, 0, 0, 0.08); }
-  .btn:focus {
+  .btn:focus,
+  button:focus {
     outline: 1px solid #fff;
     outline-offset: -4px; }
-  .btn:active {
+  .btn:active,
+  button:active {
     transform: scale(0.99); }
 
 .btn-ghost {
