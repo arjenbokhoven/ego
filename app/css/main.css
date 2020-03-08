@@ -542,6 +542,10 @@ button {
   font-size: 1rem;
   padding: 1.5rem; }
 
+.btn-group {
+  display: flex;
+  justify-content: space-around; }
+
 .card {
   background: #f0f0f0;
   border: 1px solid #dedede;

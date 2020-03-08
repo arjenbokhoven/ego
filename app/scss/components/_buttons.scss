@@ -101,3 +101,8 @@ button {
   font-size: $button-large-font;
   padding: $button-large-padding;
 }
+
+.btn-group {
+  display:flex;
+  justify-content:space-around;
+}
