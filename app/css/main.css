@@ -318,14 +318,14 @@ figure {
 .container {
   margin: 0 auto;
   max-width: 1200px;
-  padding: 0 16px; }
+  padding: 0 1rem; }
   .container.medium {
     max-width: 1000px; }
   .container.small {
     max-width: 720px; }
 
 section {
-  margin: 8rem 0; }
+  margin: 4rem 0 2rem 0; }
   section.cta {
     background-color: #ff9d00;
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
@@ -343,30 +343,25 @@ section {
 html {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font: normal normal 400 1rem/1.9 Open Sans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
+  font: normal normal 400 1rem/1.9rem Open Sans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   font-size: 1rem; }
 
 body {
-  color: #383848;
   background: white;
-  font-size: 1rem; }
+  font-size: 1rem;
+  color: #383848;
+  line-height: 1.9rem; }
 
 h1,
 h2,
 h3,
 h4,
-h5 {
-  margin: 1rem 0;
+h5,
+h6 {
   font-weight: 700;
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
-  line-height: 1.2;
+  line-height: 1.2rem;
   color: #595973; }
-  h1:not(:first-child),
-  h2:not(:first-child),
-  h3:not(:first-child),
-  h4:not(:first-child),
-  h5:not(:first-child) {
-    margin: 1.5rem 0; }
 
 h1:not(:first-child),
 h2:not(:first-child),
@@ -376,57 +371,8 @@ h5:not(:first-child),
 h6:not(:first-child) {
   margin-top: 4rem; }
 
-h1 {
-  font-size: 1.75rem; }
-
-h2 {
-  font-size: 1.5rem; }
-
-h3 {
-  font-size: 1.25rem; }
-
-h4 {
-  font-size: 1.1rem; }
-
-h5 {
-  font-size: 1rem; }
-
-@media (min-width: 720px) {
-  h1:not(:first-child),
-  h2:not(:first-child),
-  h3:not(:first-child) {
-    margin-top: 2.5rem; }
-  h1 {
-    font-size: 2.25rem; }
-  h2 {
-    font-size: 2rem; }
-  h3 {
-    font-size: 1.75rem; }
-  h4 {
-    font-size: 1.5rem; }
-  h5 {
-    font-size: 1.25rem; } }
-
-a {
-  color: #3A8595;
-  text-decoration: underline; }
-  a:hover, a:active, a:focus {
-    color: #5caec0;
-    text-decoration: underline; }
-
-pre {
-  border: 1px solid #dedede;
-  border-radius: 8px;
-  background: #f0f0f0;
-  padding: 1rem;
-  tab-size: 2;
-  color: #f14745;
-  font-family: monospace;
-  font-size: 14px;
-  margin: 0 0 1rem 0; }
-  pre code {
-    font-family: monospace;
-    line-height: 1.2; }
+p {
+  margin: 0 0 2rem 0; }
 
 .flex-s,
 .flex-l {
@@ -450,7 +396,7 @@ pre {
     margin-bottom: 16px;
     background-color: #f0f0f0;
     border: 1px solid #dedede;
-    border-radius: 8px;
+    border-radius: 0.5em;
     margin: 16px; }
 
 @media (min-width: 1000px) {
@@ -465,9 +411,9 @@ pre {
 button {
   display: inline-block;
   border: none;
-  border-radius: 8px;
-  padding: 0.85rem 1.2rem;
-  margin: 0 1rem 1rem 0;
+  border-radius: 0.5em;
+  padding: 0.85em 1.2em;
+  margin: 0 1em 1em 0;
   background: #3A8595;
   color: #fff;
   font-size: 0.9rem;
@@ -549,8 +495,8 @@ button {
 .card {
   background: #f0f0f0;
   border: 1px solid #dedede;
-  border-radius: 8px;
-  margin: 1rem; }
+  border-radius: 0.5em;
+  margin: 1em; }
 
 table {
   border-collapse: collapse;
