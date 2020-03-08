@@ -480,11 +480,11 @@ button {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
-  transition: all 0.1s ease; }
+  transition: all 0.3s ease; }
   .btn:hover, .btn:focus,
   button:hover,
   button:focus {
-    background: #4195a7;
+    background: #4aa5b8;
     color: #f0f0f0;
     text-decoration: none;
     transform: translateY(-2px);

@@ -33,6 +33,7 @@ $code-color: #f14745;
 // Buttons
 //==============================================================================
 
+$button-hover-color: lighten($primary-color, 10%);
 $button-success-color: #4ed391;
 $button-info-color: #4844e9;
 $button-warning-color: #FB8731;

@@ -17,10 +17,10 @@ button {
   cursor: pointer;
   -webkit-appearance: none;
   -moz-appearance: none;
-  transition: all 0.1s ease;
+  transition: all 0.3s ease;
   &:hover,
   &:focus {
-    background: lighten($primary-color, 5%);
+    background: $button-hover-color;
     color: $secondary-color;
     text-decoration: none;
     transform: translateY(-2px);
