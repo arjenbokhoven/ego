@@ -3,4 +3,8 @@
   border: $card-border;
   border-radius: $card-border-radius;
   margin: $margins;
+  padding: $padding;
+  &.card-large {
+    padding: 2rem;
+  }
 }
