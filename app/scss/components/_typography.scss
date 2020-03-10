@@ -9,27 +9,33 @@ html {
   font-size: $font-size;
 }
 
-$baseline: $line-height;
-
 // Body base
 body {
   background: $background;
-  font-size: $body-font-size;
   color: $font-color;
-  line-height: $baseline;
+  line-height: $line-height;
 }
 
 // Headings
+%headings{
+  font-weight: $heading-font-weight;
+  font-family: $heading-font-family;
+  color: $heading-color;
+  margin-bottom: 1rem;
+}
+
 h1,
 h2,
-h3,
+h3 {
+  @extend %headings;
+  line-height: $heading-line-height;
+}
+
 h4,
 h5,
 h6 {
-  font-weight: $heading-font-weight;
-  font-family: $heading-font-family;
-  line-height: $heading-line-height;
-  color: $heading-color;
+  @extend %headings;
+  line-height: $heading-line-height-secondary;
 }
 
 h1:not(:first-child),
@@ -38,66 +44,37 @@ h3:not(:first-child),
 h4:not(:first-child),
 h5:not(:first-child),
 h6:not(:first-child) {
-  margin-top: 4rem;
+  margin-top: 3rem;
 }
 
 p {
-  margin: 0 0 2rem 0;
+  margin: 0 0 1rem 0;
 }
 
-// // Heading individual styles
-// h1 {
-//   font-size: $h1-mobile;
-// }
+// Heading desktop individual styles
+h1 {
+  font-size: $h1;
+}
 
-// h2 {
-//   font-size: $h2-mobile;
-// }
+h2 {
+  font-size: $h2;
+}
 
-// h3 {
-//   font-size: $h3-mobile;
-// }
+h3 {
+  font-size: $h3;
+}
 
-// h4 {
-//   font-size: $h4-mobile;
-// }
+h4 {
+  font-size: $h4;
+}
 
-// h5 {
-//   font-size: $h5-mobile;
-// }
+h5 {
+  font-size: $h5;
+}
 
-// h6 {
-//   font-size: $h6-mobile;
-// }
-
-// @include small-breakpoint {
-//   // Increased margin on additional headings
-//   h1:not(:first-child),
-//   h2:not(:first-child),
-//   h3:not(:first-child) {
-//     margin-top: 2.5rem;
-//   }
-//   // Heading desktop individual styles
-//   h1 {
-//     font-size: $h1;
-//   }
-
-//   h2 {
-//     font-size: $h2;
-//   }
-
-//   h3 {
-//     font-size: $h3;
-//   }
-
-//   h4 {
-//     font-size: $h4;
-//   }
-
-//   h5 {
-//     font-size: $h5;
-//   }
-// }
+h6 {
+  font-size: $h6;
+}
 
 // a {
 //   color: $link-color;
@@ -111,20 +88,20 @@ p {
 //   }
 // }
 
-// // Code block styling
-// pre {
-//   border: $borders;
-//   border-radius: $border-radius;
-//   background: $code-background;
-//   padding: 1rem;
-//   tab-size: 2;
-//   color: $code-color;
-//   font-family: $code-family;
-//   font-size: $code-size;
-//   margin: 0 0 $margins 0;
+// // // Code block styling
+// // pre {
+// //   border: $borders;
+// //   border-radius: $border-radius;
+// //   background: $code-background;
+// //   padding: 1rem;
+// //   tab-size: 2;
+// //   color: $code-color;
+// //   font-family: $code-family;
+// //   font-size: $code-size;
+// //   margin: 0 0 $margins 0;
 
-//   code {
-//     font-family: $code-family;
-//     line-height: 1.2;
-//   }
-// }
+// //   code {
+// //     font-family: $code-family;
+// //     line-height: 1.2;
+// //   }
+// // }
