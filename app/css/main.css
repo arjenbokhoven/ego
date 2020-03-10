@@ -353,54 +353,40 @@ body {
   color: #383848;
   line-height: 1.9rem; }
 
-h1,
-h2,
-h3, h4,
-h5,
-h6 {
+h1, h2, h3, h4, h5, h6 {
   font-weight: 700;
   font-family: Open Sans, -apple-system, BlinkMacSystemFont, Helvetica Neue, Helvetica, Arial, sans-serif;
   color: #595973;
   margin-bottom: 1rem; }
+  h1:not(:first-child), h2:not(:first-child), h3:not(:first-child), h4:not(:first-child), h5:not(:first-child), h6:not(:first-child) {
+    margin-top: 3rem; }
 
-h1,
-h2,
-h3 {
+h1 {
+  font-size: 1.75rem;
   line-height: 1.2em; }
 
-h4,
-h5,
-h6 {
+h2 {
+  font-size: 1.5rem;
+  line-height: 1.2em; }
+
+h3 {
+  font-size: 1.25rem;
+  line-height: 1.2em; }
+
+h4 {
+  font-size: 1.15rem;
   line-height: 1.5em; }
 
-h1:not(:first-child),
-h2:not(:first-child),
-h3:not(:first-child),
-h4:not(:first-child),
-h5:not(:first-child),
-h6:not(:first-child) {
-  margin-top: 3rem; }
+h5 {
+  font-size: 1.1rem;
+  line-height: 1.5em; }
+
+h6 {
+  font-size: 1rem;
+  line-height: 1.5em; }
 
 p {
   margin: 0 0 1rem 0; }
-
-h1 {
-  font-size: 1.75rem; }
-
-h2 {
-  font-size: 1.5rem; }
-
-h3 {
-  font-size: 1.25rem; }
-
-h4 {
-  font-size: 1.15rem; }
-
-h5 {
-  font-size: 1.1rem; }
-
-h6 {
-  font-size: 1rem; }
 
 .flex-s,
 .flex-l {

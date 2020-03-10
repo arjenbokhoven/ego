@@ -16,65 +16,68 @@ body {
   line-height: $line-height;
 }
 
+// h1, h2, h3 {
+//   @extend %headings;
+//   line-height: $heading-line-height;
+// }
+
+// h4, h5, h6 {
+//   @extend %headings;
+//   line-height: $heading-line-height-secondary;
+// }
+
 // Headings
-%headings{
+
+ %headings {
   font-weight: $heading-font-weight;
   font-family: $heading-font-family;
   color: $heading-color;
   margin-bottom: 1rem;
+  &:not(:first-child) {
+    margin-top: 3rem;
+  }
 }
 
-h1,
-h2,
-h3 {
+h1 {
+  font-size: $h1;
   @extend %headings;
   line-height: $heading-line-height;
 }
 
-h4,
-h5,
-h6 {
+h2 {
+  font-size: $h2;
+  @extend %headings;
+  line-height: $heading-line-height;
+}
+
+h3 {
+  font-size: $h3;
+  @extend %headings;
+  line-height: $heading-line-height;
+}
+
+h4 {
+  font-size: $h4;
   @extend %headings;
   line-height: $heading-line-height-secondary;
 }
 
-h1:not(:first-child),
-h2:not(:first-child),
-h3:not(:first-child),
-h4:not(:first-child),
-h5:not(:first-child),
-h6:not(:first-child) {
-  margin-top: 3rem;
+h5 {
+  font-size: $h5;
+  @extend %headings;
+  line-height: $heading-line-height-secondary;
+}
+
+h6 {
+  font-size: $h6;
+  @extend %headings;
+  line-height: $heading-line-height-secondary;
 }
 
 p {
   margin: 0 0 1rem 0;
 }
 
-// Heading desktop individual styles
-h1 {
-  font-size: $h1;
-}
-
-h2 {
-  font-size: $h2;
-}
-
-h3 {
-  font-size: $h3;
-}
-
-h4 {
-  font-size: $h4;
-}
-
-h5 {
-  font-size: $h5;
-}
-
-h6 {
-  font-size: $h6;
-}
 
 // a {
 //   color: $link-color;
