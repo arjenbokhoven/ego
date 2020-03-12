@@ -19,8 +19,8 @@ $mobile: $small !default;
 //------------------------------------------------------------------------------
 
 $background: white !default;
-$heading-color: lighten($text-color, 15%);
 $text-color: #383848;
+$heading-color: lighten($text-color, 15%);
 $primary-color: #3A8595;
 $secondary-color: #f0f0f0;
 $white: #fff;
@@ -43,7 +43,7 @@ $button-text-transform: uppercase;
 $button-font-size: 0.9rem;
 $button-border-radius: 0.5rem;
 $button-padding: 0.85em 1.2em;
-$button-margin: 0 1em 1em 0;
+$button-margin: 0 1em 0 0;
 $button-letter-spacing: 1px;
 $button-border-square: 0;
 $button-border-round: 1.6rem;
