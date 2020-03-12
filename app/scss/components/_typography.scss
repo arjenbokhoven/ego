@@ -16,16 +16,6 @@ body {
   line-height: $line-height;
 }
 
-// h1, h2, h3 {
-//   @extend %headings;
-//   line-height: $heading-line-height;
-// }
-
-// h4, h5, h6 {
-//   @extend %headings;
-//   line-height: $heading-line-height-secondary;
-// }
-
 // Headings
 
  %headings {
@@ -41,41 +31,72 @@ body {
 h1 {
   font-size: $h1;
   @extend %headings;
-  line-height: $heading-line-height;
+  line-height: $heading-line-height-1;
+  letter-spacing: $heading-letter-spacing-1;
 }
 
 h2 {
   font-size: $h2;
   @extend %headings;
-  line-height: $heading-line-height;
+  line-height: $heading-line-height-2;
+  letter-spacing: $heading-letter-spacing-2;
 }
 
 h3 {
   font-size: $h3;
   @extend %headings;
-  line-height: $heading-line-height;
+  line-height: $heading-line-height-2;
+  letter-spacing: $heading-letter-spacing-2;
 }
 
 h4 {
   font-size: $h4;
   @extend %headings;
-  line-height: $heading-line-height-secondary;
+  line-height: $heading-line-height-3;
+  letter-spacing: $heading-letter-spacing-3;
 }
 
 h5 {
   font-size: $h5;
   @extend %headings;
-  line-height: $heading-line-height-secondary;
+  line-height: $heading-line-height-3;
+  letter-spacing: $heading-letter-spacing-3;
 }
 
 h6 {
   font-size: $h6;
   @extend %headings;
-  line-height: $heading-line-height-secondary;
+  line-height: $heading-line-height-4;
+  letter-spacing: $heading-letter-spacing-4;
+}
+
+@include small-breakpoint {
+  h1 {
+    font-size: $h1-large;
+  }
+  h2 {
+    font-size: $h2-large;
+  }
+  h3 {
+    font-size: $h3-large;
+  }
+  h4 {
+    font-size: $h4-large;
+  }
+  h5 {
+    font-size: $h5-large;
+  }
+  h6 {
+    font-size: $h6-large;
+  }
 }
 
 p {
   margin: 0 0 1rem 0;
+}
+
+.white {
+  color: red;
 }
 
 
