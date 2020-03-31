@@ -320,27 +320,27 @@ figure {
   max-width: 1200px;
   padding: 0 1rem; }
   .container.medium {
-    max-width: 1000px; }
+    max-width: 900px; }
   .container.small {
-    max-width: 720px; }
+    max-width: 640px; }
 
 section {
   margin: 0 0 4rem 0; }
   section.cta {
-    background-color: #ff9d00;
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 1600 800'%3E%3Cg stroke='%23000' stroke-width='66.7' stroke-opacity='0.05' %3E%3Ccircle fill='%23ff9d00' cx='0' cy='0' r='1800'/%3E%3Ccircle fill='%23fb8d17' cx='0' cy='0' r='1700'/%3E%3Ccircle fill='%23f47d24' cx='0' cy='0' r='1600'/%3E%3Ccircle fill='%23ed6e2d' cx='0' cy='0' r='1500'/%3E%3Ccircle fill='%23e35f34' cx='0' cy='0' r='1400'/%3E%3Ccircle fill='%23d85239' cx='0' cy='0' r='1300'/%3E%3Ccircle fill='%23cc453e' cx='0' cy='0' r='1200'/%3E%3Ccircle fill='%23be3941' cx='0' cy='0' r='1100'/%3E%3Ccircle fill='%23b02f43' cx='0' cy='0' r='1000'/%3E%3Ccircle fill='%23a02644' cx='0' cy='0' r='900'/%3E%3Ccircle fill='%23901e44' cx='0' cy='0' r='800'/%3E%3Ccircle fill='%23801843' cx='0' cy='0' r='700'/%3E%3Ccircle fill='%236f1341' cx='0' cy='0' r='600'/%3E%3Ccircle fill='%235e0f3d' cx='0' cy='0' r='500'/%3E%3Ccircle fill='%234e0c38' cx='0' cy='0' r='400'/%3E%3Ccircle fill='%233e0933' cx='0' cy='0' r='300'/%3E%3Ccircle fill='%232e062c' cx='0' cy='0' r='200'/%3E%3Ccircle fill='%23210024' cx='0' cy='0' r='100'/%3E%3C/g%3E%3C/svg%3E");
-    background-attachment: fixed;
-    background-size: cover;
     margin: 0;
     min-height: 50vh;
     display: flex;
     align-items: top; }
-    @media (min-width: 720px) {
+    @media (min-width: 640px) {
       section.cta {
-        height: 100vh;
+        min-height: 75vh;
         align-items: center; } }
   section.cta h1 {
-    font-size: 2.5rem; }
+    font-size: 2rem;
+    margin-top: 0; }
+    @media (min-width: 640px) {
+      section.cta h1 {
+        font-size: 3rem; } }
 
 html {
   -webkit-font-smoothing: antialiased;
@@ -391,7 +391,7 @@ h6 {
   line-height: 1.7em;
   letter-spacing: 0.0625rem; }
 
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   h1 {
     font-size: 2.125rem; }
   h2 {
@@ -408,8 +408,11 @@ h6 {
 p {
   margin: 0 0 1rem 0; }
 
-.white {
-  color: red; }
+.lead {
+  font-size: 1.125rem; }
+
+.text-white {
+  color: white; }
 
 .flex-s,
 .flex-l {
@@ -434,13 +437,13 @@ p {
     background-color: #f0f0f0;
     border: 1px solid #dedede;
     border-radius: 0.5rem;
-    margin: 16px; }
+    margin: 1rem; }
 
-@media (min-width: 1000px) {
+@media (min-width: 900px) {
   .flex-l {
     flex: 1; } }
 
-@media (min-width: 720px) {
+@media (min-width: 640px) {
   .flex-s {
     flex: 1; } }
 
@@ -449,8 +452,8 @@ button {
   display: inline-block;
   border: none;
   border-radius: 0.5rem;
-  padding: 0.85em 1.2em;
-  margin: 0 1em 1em 0;
+  padding: 0.85rem 1.2rem;
+  margin: 0 1rem 0.5rem 0;
   background: #3A8595;
   color: #fff;
   font-size: 0.9rem;
@@ -533,10 +536,12 @@ button {
   background: #f0f0f0;
   border: 1px solid #dedede;
   border-radius: 0.5rem;
-  margin: 1rem;
+  margin: 1rem 0;
   padding: 1rem; }
-  .card.card-large {
-    padding: 2rem; }
+
+@media (min-width: 640px) {
+  .card-large {
+    padding: 4rem; } }
 
 table {
   border-collapse: collapse;
