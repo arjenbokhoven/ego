@@ -1,13 +1,13 @@
 .card {
   background: $card-background;
-  border: $card-border;
-  border-radius: $card-border-radius;
-  margin: $margins 0;
-  padding: $padding;
+  // border: $card-border;
+  // border-radius: $card-border-radius;
+  // margin: $margins 0;
+  // padding: $padding;
 }
 
 @include small-breakpoint {
   .card-large {
-    padding: 4rem;
+  
   }
 }
